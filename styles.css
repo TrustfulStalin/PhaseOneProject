@@ -1,0 +1,54 @@
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid black;
+}
+
+
+body{
+    background-color: white;
+
+}
+
+.lebronButton{
+    text-align:center;
+    display:block;
+}
+
+.RussButton {
+    text-align: center;
+    display: block;
+}
+
+.JuliButton {
+    text-align: center;
+    display: block;
+}
+
+.EwingButton {
+    text-align: center;
+    display: block;
+}
+.StockButton {
+    text-align: center;
+    display: block;
+}
+
+.SubForm {
+    text-align: right;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color:cyan;
+}

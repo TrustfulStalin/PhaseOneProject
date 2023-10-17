@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title> Welcome to the Nba Hall Of Fame </title>
+
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to the Nba Hall Of Fame</h1>
+    </header>
+
+    <div class="container">
+        <card id="LebronCard">
+            <p> Lebron James <p />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQDhuIzuv-9qBsyatu9QuWTm8J0JtlkksSg&usqp=CAU" width="500" length="500" ; />
+            <button id="lbj" class="lebronButton" >
+                <p>
+                    Want more information?
+                </p>
+            </button>
+
+        </card>
+        <card id="RussCard">
+            <p>
+                Russell Westbrook
+            </p>
+            <img src="https://people.com/thmb/5p_coiDjD6CerRopDOhyNW9H2xo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(891x0:893x2)/russell-westbrook-ae4a47b8a7344c44aa05cab7958762d9.jpg" width="500" height="500" />
+
+            <button class="RussButton" onclick="russ">
+                <p>
+                    Want more information?
+                </p>
+            </button>
+
+
+
+        </card>
+
+
+        <card id="JuliCard">
+            <p>
+                Juilus Erving
+            </p>
+            <img src="https://cdn.nba.com/manage/2020/10/julius-erving-nets-392x588.jpg" width="500" height="500" />
+
+            <button class="JuliButton">
+                <p>
+                    Want more information?
+                </p>
+            </button>
+        </card>
+
+        <card id="EwingCard">
+            <p>
+                Patrick Ewing
+            </p>
+            <img src="https://www.basketballnetwork.net/.image/c_fit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1290/MjAwMTQwMTc4MTUxNDQ5OTc2/patrick-ewing.jpg" width="500" height="500" />
+
+            <button class="EwingButton">
+                <p>
+                    Want more information?
+                </p>
+            </button>
+        </card>
+
+        <card id="StockCard">
+            <p>
+                John Stockton
+            </p>
+            <img src="https://cdn.vox-cdn.com/thumbor/0njtgFSv2wzfFtRklY3fnX7RwHY=/0x9:2438x1634/1200x800/filters:focal(0x9:2438x1634)/cdn.vox-cdn.com/uploads/chorus_image/image/45987734/GettyImages-1487792.0.jpg" width="500" height="500" />
+
+            <button class="StockButton">
+                <p>
+                    Want more information?
+                </p>
+            </button>
+        </card>
+
+
+
+    </div>
+
+    <form  class="SubForm">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" />
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" />
+        <label for="pic">Enter piture URL</label>
+        <input type="text" id="newpic" name="playerpic" />
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        const L = document.getElementById('lbj');
+        L.addEventListener("click", russ)
+
+    </script>
+
+</body>
+
+
+
+
+</html>

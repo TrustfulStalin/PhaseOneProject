@@ -1,0 +1,58 @@
+{
+  "Players": [
+    {
+      "Name": "Lebron James",
+      "Position": "Small foward",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQDhuIzuv-9qBsyatu9QuWTm8J0JtlkksSg&usqp=CAU",
+      "facts": "Joined the NBA straight from high school, The last player to do this that is still active in the NBA"
+    },
+    {
+      "Name": "Rusell Westbrook",
+      "Position": "PointGuard",
+      "image": "typicode"
+    },
+    {
+      "Name": "Julius Erving",
+      "Position": "SmallForward",
+      "image": "typicode"
+    },
+    {
+      "Name": "Patrick Ewing",
+      "Position": "Center",
+      "image": "typicode"
+    },
+    {
+      "Name": "John Stockton",
+      "Position": "PointGuard",
+      "image": "typicode"
+    },
+    {
+      "Name": "",
+      "Position": "json-server",
+      "image": "typicode"
+    },
+    {
+      "Name": "",
+      "Position": "json-server",
+      "image": "typicode"
+    },
+
+    {
+      "Name": "",
+      "Position": "json-server",
+      "image": "typicode"
+    }
+
+  ],
+
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
