@@ -1,0 +1,57 @@
+{
+  "Players": [
+    {
+      "Name": "Lebron James",
+      "Position": "Small foward",
+      "facts": "Joined the NBA straight from high school, The last player to do this that is still active in the NBA"
+    },
+    {
+      "Name": "Rusell Westbrook",
+      "Position": "PointGuard",
+      "facts": "Earned the NBA Most Valuable Player Award (MVP) for the 2016–17 season. Russell Westbrook holds the record for the most NBA career regular season triple doubles with 198, and is the only player to average a triple-double over four different seasons."
+    },
+    {
+      "Name": "Julius Erving",
+      "Position": "SmallForward",
+      "image": "typicode"
+    },
+    {
+      "Name": "Patrick Ewing",
+      "Position": "Center",
+      "image": "typicode"
+    },
+    {
+      "Name": "John Stockton",
+      "Position": "PointGuard",
+      "image": "typicode"
+    },
+    {
+      "Name": "",
+      "Position": "json-server",
+      "image": "typicode"
+    },
+    {
+      "Name": "",
+      "Position": "json-server",
+      "image": "typicode"
+    },
+
+    {
+      "Name": "",
+      "Position": "json-server",
+      "image": "typicode"
+    }
+
+  ],
+
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
