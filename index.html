@@ -19,7 +19,7 @@
         <card id="LebronCard">
             <p> Lebron James <p />
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQDhuIzuv-9qBsyatu9QuWTm8J0JtlkksSg&usqp=CAU" width="500" length="500" ; />
-            <button id="lbj" class="lebronButton" >
+            <button id="lbj" class="lebronButton">
                 <p>
                     Want more information?
                 </p>
@@ -32,7 +32,7 @@
             </p>
             <img src="https://people.com/thmb/5p_coiDjD6CerRopDOhyNW9H2xo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(891x0:893x2)/russell-westbrook-ae4a47b8a7344c44aa05cab7958762d9.jpg" width="500" height="500" />
 
-            <button class="RussButton" onclick = russ();>
+            <button class="RussButton" onclick=russ();>
                 <p>
                     Want more information?
                 </p>
@@ -49,7 +49,7 @@
             </p>
             <img src="https://cdn.nba.com/manage/2020/10/julius-erving-nets-392x588.jpg" width="500" height="500" />
 
-            <button class="JuliButton" onclick= Erving();>
+            <button class="JuliButton" onclick=Erving();>
                 <p>
                     Want more information?
                 </p>
@@ -62,7 +62,7 @@
             </p>
             <img src="https://www.basketballnetwork.net/.image/c_fit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1290/MjAwMTQwMTc4MTUxNDQ5OTc2/patrick-ewing.jpg" width="500" height="500" />
 
-            <button class="EwingButton" onclick= Ewing()>
+            <button class="EwingButton" onclick=Ewing()>
                 <p>
                     Want more information?
                 </p>
@@ -75,7 +75,7 @@
             </p>
             <img src="https://cdn.vox-cdn.com/thumbor/0njtgFSv2wzfFtRklY3fnX7RwHY=/0x9:2438x1634/1200x800/filters:focal(0x9:2438x1634)/cdn.vox-cdn.com/uploads/chorus_image/image/45987734/GettyImages-1487792.0.jpg" width="500" height="500" />
 
-            <button class="StockButton" onclick= stock() >
+            <button class="StockButton" onclick=stock()>
                 <p>
                     Want more information?
                 </p>
@@ -85,8 +85,8 @@
 
 
     </div>
-
-    <form  class="SubForm">
+    
+    <form action= post id="form1" >
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname" />
         <label for="lname">Last name:</label><br>
@@ -97,9 +97,33 @@
     </form>
 
     <script>
-        const L = document.getElementById('lbj');
-        L.addEventListener("click", Lebron)
 
+        const form = document.getElementById("form1");
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const payload = new FormData(form);
+           
+
+            console.log([...payload]);
+          
+            const playcard = document.getElementsByClassName("container")
+            const playImg = document.createElement("img")
+            const playdiv = document.createElement("div")
+            const detailsImage = document.createElement("img")
+           
+            fetch('http://localhost:3000/post', {
+                method: "POST",
+                body: payload,
+
+                
+            })
+                .then(res => res.json())
+                .then(data => console.log(data))
+                .catch(err => console.log(err));
+            detailsImage.src = Array(3)[2];
+            console.log(Array(3)[2]);
+        })
     </script>
 
 </body>
