@@ -25,16 +25,9 @@ function Ewing() {
 
 function stock() {
 
-    alert("e was a ten-time All Star, led the league in assists a record nine consecutive seasons, and holds the single-season record for assists with 1,164. At the time of his retirement, Stockton held the NBA career record for assists and steals with 15,806 and 3,265 respectively.")
+    alert("He was a ten-time All Star, led the league in assists a record nine consecutive seasons, and holds the single-season record for assists with 1,164. At the time of his retirement, Stockton held the NBA career record for assists and steals with 15,806 and 3,265 respectively.")
 
 }
-
-
-
-
-
-
-
 
 
 
@@ -49,8 +42,6 @@ function stock() {
         
 
 
-//fetch
-//get all players stats plus unique fact
 
 
 
@@ -109,6 +100,20 @@ function Positions() {
 }
 
 
+
+
+
+
+
+
+   
+function action() {
+let form = document.getElementsByClassName("SubForm");
+ event.preventDefault()
+    var fname = document.getElementById('fname').Value
+    console.log('fname')
+
+}
 
 
 
